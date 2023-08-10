@@ -1,0 +1,38 @@
+package com.krvinay.exbeanannotation;
+
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+
+class Student{
+	private Address address;
+	
+	public Student(Address address) {
+		this.address= address;
+	}
+	public void print() {		
+		System.out.println("Student class methd called.....");
+	}	
+}
+
+class Address{
+	public void print() {
+		System.out.println("Address class methd called.....");
+	}
+}
+
+@Configuration
+class AppConfig{
+	
+	@Bean
+	public Address address() {
+		return new Address();
+	}
+	@Bean
+	public Student student() {
+		return new Student(address());
+	}
+}
+
+public class DemoBean {
+
+}

@@ -1,0 +1,6 @@
+package com.krvinay.withioc;
+
+public interface Vehicle {
+
+	void move();
+}

@@ -1,0 +1,23 @@
+package com.krvinay.exbeanannotation;
+
+
+class Student{
+	private Address address;
+	
+	public Student(Address address) {
+		this.address= address;
+	}
+	public void print() {		
+		System.out.println("Student class methd called.....");
+	}	
+}
+
+class Address{
+	public void print() {
+		System.out.println("Address class methd called.....");
+	}
+}
+
+public class DemoBean {
+
+}

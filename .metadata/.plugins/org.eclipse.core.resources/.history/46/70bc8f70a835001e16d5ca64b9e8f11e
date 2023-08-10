@@ -1,0 +1,5 @@
+package com.krvinay.constructordi;
+
+public class MessageService {
+
+}
